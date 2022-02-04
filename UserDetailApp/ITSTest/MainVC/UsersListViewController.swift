@@ -111,7 +111,7 @@ extension UsersListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: UsersListTableViewCell.reuseId, for: indexPath) as? UsersListTableViewCell else { return UITableViewCell() }
-        cell.setUp(with: filteredUsers[indexPath.row])
+        cell.setup(with: filteredUsers[indexPath.row])
         return cell
     }
     

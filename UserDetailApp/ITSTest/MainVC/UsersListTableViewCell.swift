@@ -47,7 +47,7 @@ class UsersListTableViewCell: UITableViewCell {
     
     // MARK: - Internal methods
     
-    func setUp(with user: User) {
+    func setup(with user: User) {
         nameLabel.text = user.name
         ageLabel.text = "\(user.age)"
         genderLabel.text = user.gender
